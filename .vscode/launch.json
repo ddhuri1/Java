@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Robbing",
+            "request": "launch",
+            "mainClass": "Robbing"
+        }
+    ]
+}
