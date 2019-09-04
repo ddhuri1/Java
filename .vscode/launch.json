@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - PairChain",
+            "request": "launch",
+            "mainClass": "PairChain"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Stock",
             "request": "launch",
             "mainClass": "Stock"
