@@ -38,3 +38,6 @@ Also given an integer W which represents knapsack capacity, find out the maximum
 You cannot break an item, either pick the complete item, or don’t pick it (0-1 property).
 Recursive Complexity: Exponential: O(2^n)
 Time complexity: O(nW), where W can vary
+
+#### 7. Longest Sub-Sequence: 
+Time complexity: O(nm)
