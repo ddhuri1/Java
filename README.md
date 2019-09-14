@@ -41,3 +41,7 @@ Time complexity: O(nW), where W can vary
 
 #### 7. Longest Sub-Sequence: 
 Time complexity: O(nm)
+
+#### 8. Longest Sub-String: 
+Time complexity: O(nm)
+Traversal to find sub string is O(n), where n is length of smaller string between the two
