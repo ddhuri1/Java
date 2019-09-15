@@ -45,3 +45,7 @@ Time complexity: O(nm)
 #### 8. Longest Sub-String: 
 Time complexity: O(nm)
 Traversal to find sub string is O(n), where n is length of smaller string between the two
+
+#### 8. Longest Consecutive Sub-Sequence:
+Find Longest sequence who has max length, must be consecutive
+Time complexity: O(n)
