@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Unique_elem_array",
+            "request": "launch",
+            "mainClass": "Unique_elem_array"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LCSubSeq",
             "request": "launch",
             "mainClass": "LCSubSeq"
