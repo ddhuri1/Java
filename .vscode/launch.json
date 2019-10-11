@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - All_Unique",
+            "request": "launch",
+            "mainClass": "All_Unique"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Unique_elem_array",
             "request": "launch",
             "mainClass": "Unique_elem_array"
