@@ -11,7 +11,7 @@ public class PairChain
         pairs.add(new Pair(8,10));
         pairs.add(new Pair(1,2));
         pairs.add(new Pair(2,3));
-        pairs.add(new Pair(4,5));
+        pairs.add(new Pair(3,5));
         
         int dist[] = new int[pairs.size() + 1];
         int pair[] = new int[pairs.size() + 1];
@@ -27,13 +27,15 @@ public class PairChain
         dist[0] = 1;
         pair[0] = 1;
         int j = 1;
+        int k =0;
         for(int i = 1; i< pairs.size(); i++)
         {
-            if(pairs.get(i).a > pairs.get(i-1).b)
+            if(pairs.get(i).a > pairs.get(k).b)
             {
                 dist[i] = dist[i-1] + 1;
                 pair[j] = i+1;
                 j++;
+                k = i;
             }
             else
             {
