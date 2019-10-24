@@ -7,8 +7,6 @@ public class All_Unique
 	{
         // int elem[] = {4,5,6,4,5,6,1};
         int elem[] = {1,3,3,35,2,34,5,6,5,6,1,2};
-        int size = elem.length;
-        int temp  = 0;
         HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>(); 
 
         //Get hashmap of all unique elements in list
