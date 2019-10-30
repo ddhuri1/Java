@@ -24,7 +24,7 @@ public class Selection
                 
             }
             if(min < arr[i])
-            swap(i,in_pos);
+                swap(i,in_pos);
             
         }
         System.out.println("Sorted arrr is : "+Arrays.toString(arr));
