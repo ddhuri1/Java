@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CandyCrush1",
+            "request": "launch",
+            "mainClass": "CandyCrush1",
+            "projectName": "LEET_c797cfbe"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MergeSort",
             "request": "launch",
             "mainClass": "MergeSort"

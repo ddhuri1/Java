@@ -10,6 +10,7 @@ public class CountingRods
         int[] s = new int[n+1];
         // int cost[] = { 1, 5, 8, 9, 10, 17, 17, 20};
         // int cost[] = {2, 3, 7, 8, 10};
+        // int cost[] = { 5, 24, 36, 9, 10 };
         int cost[] = { 5, 24, 36, 9, 10 };
         for (int i = 1; i<=n; i++)
         {
