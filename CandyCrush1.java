@@ -23,10 +23,10 @@ public class CandyCrush1
         for(int i =1; i < arr.length(); i++)
         {
             if( in.peek() >= 3)
-                {
-                    in.pop();
-                    ch.pop();
-                }
+            {
+                in.pop();
+                ch.pop();
+            }
             if(ch.isEmpty() || arr.charAt(i) != ch.peek())
             {
                 int count = 1;
