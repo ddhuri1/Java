@@ -6,8 +6,8 @@ Best Case Time Complexity: O(n). Best case occurs when array is already sorted.<
 Worst and Average Case Time Complexity: O(n*n). Worst case occurs when array is reverse sorted.<br />
 Space Complexity: O(1)<br />
 Boundary Cases: Bubble sort takes minimum time (Order of n) when elements are already sorted.<br />
-    - [x] Sorting In Place<br />
-    - [x] Stable
+- [x] Sorting In Place<br />
+- [x] Stable
 
 #### 2. Bucket Sort : 
 Bucket sort is mainly useful when input is uniformly distributed over a range. Bucket Sort works by distributing the elements of an array into a number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sorting algorithm. <br />
@@ -33,8 +33,8 @@ Time Complexity: O(n)<br />
 Auxiliary Space: O(1)<br />
 Boundary Cases: Insertion sort takes maximum time to sort if elements are sorted in reverse order. And it takes minimum time (Order of n) when elements are already sorted.<br />
 Algorithmic Paradigm: Incremental Approach<br />
-    - [x] Sorting In Place<br />
-    - [x] Stable
+- [x] Sorting In Place<br />
+- [x] Stable
 
 #### 5. Merge Sort: 
 Like QuickSort, Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one.  <br />
@@ -44,8 +44,8 @@ The above recurrence can be solved either using Recurrence Tree method or Master
 Time complexity: O(nLogn) in all 3 cases (worst, average and best) as merge sort always divides the array into two halves and take linear time to merge two halves.<br />
 Auxiliary Space: O(n)<br />
 Algorithmic Paradigm: Divide and Conquer<br />
-    - [ ] Sorting In Place<br />
-    - [x] Stable
+- [ ] Sorting In Place<br />
+- [x] Stable
 
 #### 6. Quick Sort: 
 Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways:<br />
@@ -58,8 +58,8 @@ T(n) = T(k) + T(n-k-1) + O(n)<br />
 Best Time complexity: O(nLogn)<br />
 Average Time complexity: O(nLogn)<br />
 Worst Time complexity: O(n²).<br />
-    - [ ] Sorting In Place<br />
-    - [ ] Stable
+- [ ] Sorting In Place<br />
+- [ ] Stable
 
 #### 7. Radix Sort: 
 We can’t use counting sort because counting sort will take O(n2) which is worse than comparison based sorting algorithms. Can we sort such an array in linear time?
@@ -74,16 +74,16 @@ In every iteration of selection sort, the minimum element (considering ascending
 Time Complexity: O(n²) as there are two nested loops.<br />
 Auxiliary Space: O(1)<br />
 The good thing about selection sort is it never makes more than O(n) swaps and can be useful when memory write is a costly operation.<br />
-    - [x] Sorting In Place<br />
-    - [ ] Stable
+- [x] Sorting In Place<br />
+- [ ] Stable
 
-#### 7. Heap Sort: 
+#### 9. Heap Sort: 
 Heap sort is a comparison based sorting technique based on Binary Heap data structure. It is similar to selection sort where we first find the maximum element and place the maximum element at the end. We repeat the same process for remaining element. Since a Binary Heap is a Complete Binary Tree, it can be easily represented as array and array based representation is space efficient. If the parent node is stored at index I, the left child can be calculated by 2 * I + 1 and right child by 2 * I + 2 (assuming the indexing starts at 0).<br />
 Time complexity of heapify: O(Logn).<br />
 Time complexity of createAndBuildHeap(): O(n)<br />
-Total: O(nLogn).
-    - [x] Sorting In Place<br />
-    - [ ] Stable
+Total: O(nLogn).<br />
+- [x] Sorting In Place<br />
+- [ ] Stable
 
 <br /><br /><br /><br />
 ***https://www.geeksforgeeks.org/sorting-algorithms/***

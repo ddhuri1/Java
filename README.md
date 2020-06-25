@@ -35,3 +35,4 @@
 |6.|Quick Sort|
 |7.|Radix Sort|
 |8.|Selection Sort|
+|9.|Heap Sort|
