@@ -12,9 +12,12 @@ public class LinearSearch
     }    
     public static void main(String a[])
     {    
-        int[] a1= {10,20,30,50,70,90};    
-        int key = 50;    
-        int result = linearSearch(a1, key);
-        System.out.println(key+" is found at index: "+ result);    
+        int arr[]= {10,20,30,50,70,90};    
+        int key = 311;    
+        int result = linearSearch(arr, key);
+        if (result < 0)  
+            System.out.println(key +" is not found!");  
+        else  
+            System.out.println(key +" is found at index: "+ result);     
     }    
 }

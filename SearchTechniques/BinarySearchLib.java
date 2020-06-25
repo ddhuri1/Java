@@ -7,8 +7,8 @@ public class BinarySearchLib
         int key = 121;  
         int result = Arrays.binarySearch(arr,key);  
         if (result < 0)  
-            System.out.println("Element is not found!");  
+            System.out.println(key +" is not found!");  
         else  
-            System.out.println("Element is found at index: "+ result);  
+            System.out.println(key +" is found at index: "+ result);  
     }  
 }

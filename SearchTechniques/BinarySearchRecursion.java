@@ -21,8 +21,8 @@ class BinarySearchRecursion
 			int last = arr.length-1;  
 			int result = binarySearch(arr, 0, last, key);  
 			if (result == -1)  
-				System.out.println("Element is not found!");  
+				System.out.println(key +" is not found!");  
 			else  
-				System.out.println("Element is found at index: " + result);  
+				System.out.println(key +" is found at index: " + result);  
 	} 
 }

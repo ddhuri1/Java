@@ -9,7 +9,7 @@ class BinarySearch
 				first = mid + 1;     
 			else if ( arr[mid] == key )
 			{  
-				System.out.println("Element is found at index: " + mid);  
+				System.out.println(key +" is found at index: " + mid);  
 				break;  
 			}
 			else  
@@ -17,7 +17,7 @@ class BinarySearch
 			mid = (first + last)/2;  
 		}  
 		if ( first > last )
-			System.out.println("Element is not found!");  
+			System.out.println(key +" is not found!");  
 		 
 	}  
 	public static void main(String args[])
