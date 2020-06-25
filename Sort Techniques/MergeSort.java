@@ -3,27 +3,13 @@ import java.util.*;
 public class MergeSort
 {
     static int arr[] = {5,4,3,2,1};
-    // static int arr[] = {1,14, 7, 28, 2, 19, 6};
-    //static int arr[] = {1,2,3,4,5};
-
-    public static void main(String[] args)
-    {
-        int low = 0;
-        int high = arr.length;
-        System.out.println("Given array is : "+Arrays.toString(arr));
-        merge_sort(arr,low,high - 1);
-        System.out.println(" Sorted array is : "+Arrays.toString(arr));
-
-    }
-
-
-    static void merge_sort(int arr[], int low, int high)
+    static void mergeSort(int arr[], int low, int high)
     {
         if(high > low)
         {
             int mid = (low+high)/2;
-            merge_sort(arr, low, mid);
-            merge_sort(arr, mid + 1, high);
+            mergeSort(arr, low, mid);
+            mergeSort(arr, mid + 1, high);
             sortArray(arr,low,mid,high);
         }
     }
@@ -40,13 +26,11 @@ public class MergeSort
         {
             arra[i] = arr[low + i];
         }
-        System.out.println(" Array A is : "+Arrays.toString(arra));
         for(int j = 0; j< lenghtb; ++j)
         {
             arrb[j] = arr[mid + 1 + j];
         }
         
-        System.out.println(" Array B is : "+Arrays.toString(arrb));
         int i = 0;
         int j = 0;
         int ptr = low;
@@ -55,7 +39,6 @@ public class MergeSort
             if(arra[i] <= arrb[j])
             {
                 arr[ptr] = arra[i];
-                System.out.println(" arrr is : "+Arrays.toString(arr));
                 i++;
             }
             else
@@ -79,7 +62,14 @@ public class MergeSort
             j++; 
             ptr++; 
         } 
-
     }
-    
+
+    public static void main(String[] args)
+    {
+        int low = 0;
+        int high = arr.length;
+        System.out.println("Given array is : "+Arrays.toString(arr));
+        mergeSort(arr,low,high - 1);
+        System.out.println(" Sorted array is : "+Arrays.toString(arr));
+    }
 }

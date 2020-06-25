@@ -61,7 +61,7 @@ Worst Time complexity: O(n²).<br />
     - [ ] Sorting In Place<br />
     - [ ] Stable
 
-#### 7. Radix Sortg: 
+#### 7. Radix Sort: 
 We can’t use counting sort because counting sort will take O(n2) which is worse than comparison based sorting algorithms. Can we sort such an array in linear time?
 Radix Sort is the answer. The idea of Radix Sort is to do digit by digit sort starting from least significant digit to most significant digit. Radix sort uses counting sort as a subroutine to sort. <br />
 Time complexity:O((n+b) * logb(k)) time where b is the base for representing numbers. If k is the maximum possible value, then d would be O(logb(k))<br />
@@ -76,5 +76,14 @@ Auxiliary Space: O(1)<br />
 The good thing about selection sort is it never makes more than O(n) swaps and can be useful when memory write is a costly operation.<br />
     - [x] Sorting In Place<br />
     - [ ] Stable
+
+#### 7. Heap Sort: 
+Heap sort is a comparison based sorting technique based on Binary Heap data structure. It is similar to selection sort where we first find the maximum element and place the maximum element at the end. We repeat the same process for remaining element. Since a Binary Heap is a Complete Binary Tree, it can be easily represented as array and array based representation is space efficient. If the parent node is stored at index I, the left child can be calculated by 2 * I + 1 and right child by 2 * I + 2 (assuming the indexing starts at 0).<br />
+Time complexity of heapify: O(Logn).<br />
+Time complexity of createAndBuildHeap(): O(n)<br />
+Total: O(nLogn).
+    - [x] Sorting In Place<br />
+    - [ ] Stable
+
 <br /><br /><br /><br />
 ***https://www.geeksforgeeks.org/sorting-algorithms/***

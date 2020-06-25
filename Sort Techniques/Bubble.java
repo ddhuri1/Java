@@ -5,6 +5,7 @@ public class Bubble
     static int arr[] = {5,4,3,2,1};
     public static void main(String[] args)
     {
+        System.out.println("Given array is : "+Arrays.toString(arr));
         boolean swap = false;
         int i, j;
         for( i= 0; i< arr.length-1; i++)
@@ -22,7 +23,7 @@ public class Bubble
         }
         System.out.println("Sorted arrr is : "+Arrays.toString(arr));
     }
-    static void swap(int low, int high)
+    static private void swap(int low, int high)
     {
         int temp = arr[low];
         arr[low] = arr[high];
