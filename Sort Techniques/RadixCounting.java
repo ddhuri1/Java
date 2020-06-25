@@ -26,6 +26,7 @@ public class RadixCounting
     }
     public static void main(String[] args)
     {
+        System.out.println("********* RADIX-COUNTING SORT *********");
         int[] arr = {5, 2, 6, 13, 15, 43, 23, 808};
         System.out.println("Given array is : "+Arrays.toString(arr));
 

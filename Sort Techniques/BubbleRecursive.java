@@ -18,6 +18,7 @@ public class BubbleRecursive
     } 
     public static void main(String[] args) 
     { 
+        System.out.println("********* BUBBLE SORT *********");
         int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
         System.out.println("Given array is : "+Arrays.toString(arr));
         bubbleSort(arr, arr.length); 

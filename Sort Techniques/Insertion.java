@@ -19,6 +19,7 @@ public class Insertion
     }
     public static void main(String[] args)
     {
+        System.out.println("********* INSERTION SORT *********");
         int low = 0;
         int high = arr.length;
         System.out.println("Given array is : "+Arrays.toString(arr));

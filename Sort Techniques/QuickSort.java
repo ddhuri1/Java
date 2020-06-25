@@ -38,6 +38,7 @@ public class QuickSort
 
     public static void main(String[]args)
     {
+        System.out.println("********* QUICK SORT *********");
         int arr[] = {1,4,3,6,4,12,3,7,65,6};
         System.out.println("Given array is : "+Arrays.toString(arr));
         int low = 0;

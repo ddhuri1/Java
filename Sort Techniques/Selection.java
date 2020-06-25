@@ -5,6 +5,7 @@ public class Selection
     static int arr[] = {1,14, 7, 28, 2, 19, 6};
     public static void main(String[] args)
     {
+        System.out.println("********* SELECTION SORT *********");
         int i,j;
         int min = 9999;
         int in_pos= 0;

@@ -39,6 +39,7 @@ public class RadixSort
     }
     public static void main(String[] args)
     {
+        System.out.println("********* RADIX SORT *********");
         int[] arr = {5, 2, 6, 13, 15, 43, 23, 88};
         int low = 0;
         int high = arr.length;

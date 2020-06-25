@@ -5,6 +5,7 @@ public class Bubble
     static int arr[] = {5,4,3,2,1};
     public static void main(String[] args)
     {
+        System.out.println("********* BUBBLE SORT *********");
         System.out.println("Given array is : "+Arrays.toString(arr));
         boolean swap = false;
         int i, j;

@@ -18,6 +18,7 @@ public class BucketSort
     }
     public static void main(String[] args)
     {
+        System.out.println("********* BUCKET SORT *********");
         int arr[] = {38,24,93,93,15,55,80,46,86,99,57,97,62,65,79,25,75,55,32,83,75,24,80,52,81,4,81,52,0,28};
         int low = 0;
         int high = arr.length;

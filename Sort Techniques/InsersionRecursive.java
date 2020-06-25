@@ -18,6 +18,7 @@ public class InsersionRecursive
     } 
     public static void main(String[] args) 
     { 
+        System.out.println("********* INSERTION SORT *********");
         int arr[] = {12, 11, 13, 5, 6}; 
         System.out.println("Given array is : "+Arrays.toString(arr));
         insertionSortRecursive(arr, arr.length); 

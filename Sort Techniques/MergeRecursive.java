@@ -51,6 +51,7 @@ public class MergeRecursive
     } 
     public static void main(String[] args) 
     { 
+        System.out.println("********* MERGE SORT *********");
         int arr[] = {12, 11, 13, 5, 6, 7}; 
         System.out.println("Given array is : "+Arrays.toString(arr));
         mergeSort(arr); 

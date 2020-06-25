@@ -30,6 +30,7 @@ public class CountingSort
     }
     public static void main(String[] args)
     {
+        System.out.println("********* COUNTING SORT *********");
         int low = 0;
         int high = arr.length;
         System.out.println("Given array is : "+Arrays.toString(arr));
