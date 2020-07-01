@@ -37,3 +37,9 @@
 |8.|Selection Sort|
 |9.|Heap Sort|
 |10.|Shell Sort|
+|11.|Cycle Sort|
+|12.|Comb Sort|
+|13.|Pigeonhole Sort|
+|14.|Cocktail Sort|
+|15.|Odd-Even Sort|
+|16.|Tim Sort|

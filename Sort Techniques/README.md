@@ -91,5 +91,49 @@ Time complexity of heapif: O(n<sup>2</sup>).<br />
 - [ ] Sorting In Place<br />
 - [ ] Stable
 
+#### 11. Cycle Sort: 
+Cycle sort is an in-place sorting Algorithm, unstable sorting algorithm, a comparison sort that is theoretically optimal in terms of the total number of writes to the original array.
+It is optimal in terms of number of memory writes. It minimizes the number of memory writes to sort (Each value is either written zero times, if it’s already in its correct position, or written one time to its correct position.)
+It is based on the idea that array to be sorted can be divided into cycles. Cycles can be visualized as a graph. We have n nodes and an edge directed from node i to node j if the element at i-th index must be present at j-th index in the sorted array.<br />
+Time Complexity : O(n²)<br />
+Worst Case : O(n²)<br />
+Average Case: O(n²)<br />
+Best Case : O(n²)<br />
+
+#### 12. Comb Sort: 
+Comb Sort is mainly an improvement over Bubble Sort. Bubble sort always compares adjacent values. So all inversions are removed one by one. Comb Sort improves on Bubble Sort by using gap of size more than 1. The gap starts with a large value and shrinks by a factor of 1.3 in every iteration until it reaches the value 1. Thus Comb Sort removes more than one inversion counts with one swap and performs better than Bubble Sort.<br />
+The shrink factor has been empirically found to be 1.3 (by testing Combsort on over 200,000 random lists).<br />
+Time Complexity : Worst case complexity is O(n²) <br /> 
+Best Case complexity is O(n).<br />
+Auxiliary Space : O(1).
+
+#### 13. Pigeonhole Sort: 
+Pigeonhole sorting is a sorting algorithm that is suitable for sorting lists of elements where the number of elements and the number of possible key values are approximately the same.
+It requires O(n + Range) time where n is number of elements in input array and ‘Range’ is number of possible values in array.<br />
+
+#### 14. Cocktail Sort: 
+Cocktail Sort is a variation of Bubble sort. The Bubble sort algorithm always traverses elements from left and moves the largest element to its correct position in first iteration and second largest in second iteration and so on. Cocktail Sort traverses through a given array in both directions alternatively.<br />
+Worst and Average Case Time Complexity: O(n*n).<br />
+Auxiliary Space: O(1)<br />
+- [x] Sorting In Place<br />
+- [x] Stable
+
+#### 15. Odd-Even Sort: 
+This is basically a variation of bubble-sort. This algorithm is divided into two phases- Odd and Even Phase. The algorithm runs until the array elements are sorted and in each iteration two phases occurs- Odd and Even Phases.
+In the odd phase, we perform a bubble sort on odd indexed elements and in the even phase, we perform a bubble sort on even indexed elements.<br />
+Time Complexity : O(n²) where, n = Number of elements in the input array.<br />
+Auxiliary Space : O(1). Just like bubble sort this is also an in-place algorithm.
+
+#### 16. Tim Sort: 
+TimSort is a sorting algorithm based on Insertion Sort and Merge Sort.
+A stable sorting algorithm works in O(n Log n) time
+Used in Java’s Arrays.sort() as well as Python’s sorted() and sort().<br />
+First sort small pieces using Insertion Sort, then merges the pieces using merge of merge sort.<br />
+We divide the Array into blocks known as Run. We sort those runs using insertion sort one by one and then merge those runs using combine function used in merge sort. If the size of Array is less than run, then Array get sorted just by using Insertion Sort. The size of run may vary from 32 to 64 depending upon the size of the array. Note that merge function performs well when sizes subarrays are powers of 2. The idea is based on the fact that insertion sort performs well for small arrays.<br />
+Details of implementation :<br />
+- [x] We consider size of run as 32.
+- [x] We one by one sort pieces of size equal to run
+- [x] After sorting individual pieces, we merge them one by one. We double the size of merged subarrays after every iteration.<br />
+
 <br /><br /><br /><br />
 ***https://www.geeksforgeeks.org/sorting-algorithms/***
