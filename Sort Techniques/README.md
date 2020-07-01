@@ -135,5 +135,50 @@ Details of implementation :<br />
 - [x] We one by one sort pieces of size equal to run
 - [x] After sorting individual pieces, we merge them one by one. We double the size of merged subarrays after every iteration.<br />
 
+#### 17. Gonme Sort: 
+Gnome Sort also called Stupid sort is based on the concept of a Garden Gnome sorting his flower pots. <br />
+A garden gnome sorts the flower pots by the following method-<br />
+He looks at the flower pot next to him and the previous one; if they are in the right order he steps one pot forward, otherwise he swaps them and steps one pot backwards.<br />
+If there is no previous pot (he is at the starting of the pot line), he steps forwards; if there is no pot next to him (he is at the end of the pot line), he is done.<br />
+Time Complexity – As there are no nested loop (only one while) it may seem that this is a linear O(N) time algorithm. But the time complexity is O(n²). This is because the variable – ‘index’ in our program doesn’t always gets incremented, it gets decremented too.<br />
+However this sorting algorithm is adaptive and performs better if the array is already/partially sorted.<br />
+Auxiliary Space –  This is an in-place algorithm. So O(1) auxiliary space is needed.
+
+#### 18. Bitonic Sort: 
+Bitonic Sort is a classic parallel algorithm for sorting.
+
+Bitonic sort does O(nlog<sup>2</sup>n) comparisons.<br />
+The number of comparisons done by Bitonic sort are more than popular sorting algorithms like Merge Sort [ does O(nLogn) comparisons], but Bitonice sort is better for parallel implementation because we always compare elements in predefined sequence and the sequence of comparison doesn’t depend on data. Therefore it is suitable for implementation in hardware and parallel processor array.<br />
+Bitonic Sort must be done if number of elements to sort are 2^n. The procedure of bitonic sequence fails if the number of elements are not in aforementioned quantity precisely.<br />
+Time Complexity :O(nlog<sup>2</sup>n). 
+
+#### 19. Pancake Sort: 
+Given an unsorted array, sort the given array. You are allowed to do only following operation on array.
+flip(arr, i): Reverse array from 0 to i <br />
+Unlike a traditional sorting algorithm, which attempts to sort with the fewest comparisons possible, the goal is to sort the sequence in as few reversals as possible.
+The idea is to do something similar to Selection Sort. We one by one place maximum element at the end and reduce the size of current array by one.<br />
+Time Complexity :O(n<sup>2</sup>).
+
+#### 20. Bogo Sort: 
+BogoSort also known as permutation sort, stupid sort, slow sort, shotgun sort or monkey sort is a particularly ineffective algorithm based on generate and test paradigm. The algorithm successively generates permutations of its input until it finds one that is sorted.<br />
+Time Complexity:<br />
+Worst Case : O(∞) (since this algorithm has no upper bound)<br />
+Average Case: O(n*n!)<br />
+Best Case : O(n)(when array given is already sorted)<br />
+Auxiliary Space : O(1)
+
+#### 21. Stooge Sort: 
+The Stooge sort is a recursive sorting algorithm. Always take the ceil of ((2/3)*N) for selecting elements.<br />
+The running time complexity of stooge sort can be written as, T(n) = 3T(3n/2) + T(1)
+Solution of above recurrence is O(n<sup>(log3/log1.5)</sup>) = O(n<sup>2.709</sup>), hence it is slower than even bubble sort(n<sup>2</sup>).
+
+#### 22. Tree Sort: 
+Tree sort is a sorting algorithm that is based on Binary Search Tree data structure. It first creates a binary search tree from the elements of the input list or array and then performs an in-order traversal on the created binary search tree to get the elements in sorted order.<br />
+Average Case Time Complexity : O(nlogn)
+Adding one item to a Binary Search tree on average takes O(log n) time. Therefore, adding n items will take O(n log n) time<br />
+Worst Case Time Complexity : O(n<sup>2</sup>). The worst case time complexity of Tree Sort can be improved by using a self-balancing binary search tree like Red Black Tree, AVL Tree. Using self-balancing binary tree Tree Sort will take O(nlogn) time to sort the array in worst case.<br />
+Auxiliary Space : O(n)
+
+
 <br /><br /><br /><br />
 ***https://www.geeksforgeeks.org/sorting-algorithms/***

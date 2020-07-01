@@ -43,3 +43,9 @@
 |14.|Cocktail Sort|
 |15.|Odd-Even Sort|
 |16.|Tim Sort|
+|17.|Gnome Sort|
+|18.|Bitonic Sort|
+|19.|Pancake Sort|
+|20.|Bogo Sort|
+|21.|Stooge Sort|
+|22.|Tree Sort|

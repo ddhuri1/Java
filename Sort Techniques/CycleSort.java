@@ -47,6 +47,6 @@ class CycleSort
         int arr[] = {5,4,3,2,1};
         System.out.println("Given array is : "+Arrays.toString(arr));
 		cycleSort(arr, arr.length); 
-		System.out.println(" Sorted array is : "+Arrays.toString(arr)); 
+		System.out.println("Sorted array is : "+Arrays.toString(arr)); 
 	} 
 } 
